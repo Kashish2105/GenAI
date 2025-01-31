@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crocodile Facts</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 600px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background-color: #f9f9f9;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Crocodile Facts</h1>
+        <ul id="fact-list">
+        </ul>
+    </div>
+    <script>
+        const facts = [
+            "Crocodiles are ancient reptiles, having been around for millions of years.",
+            "They are found in tropical regions of Africa, Asia, the Americas, and Australia.",
+            "Crocodiles are excellent swimmers and can hold their breath for extended periods.",
+            "They are carnivores with a diet consisting mainly of fish, birds, and mammals.",
+            "Crocodiles have powerful jaws and a strong bite force.",
+            "They have a unique body structure with bony plates called osteoderms on their back and tail.",
+            "Crocodiles are ambush predators, often lying in wait for prey to come within reach.",
+            "They have a four-chambered heart, similar to mammals and birds.",
+            "Female crocodiles lay eggs in nests and provide parental care for their young.",
+            "There are 14 different species of crocodiles, each with its own unique characteristics."
+        ];
+
+        const factList = document.getElementById('fact-list');
+
+        facts.forEach(fact => {
+            const li = document.createElement('li');
+            li.textContent = fact;
+            factList.appendChild(li);
+        });
+    </script>
+</body>
+</html>
